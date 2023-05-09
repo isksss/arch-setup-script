@@ -3,8 +3,8 @@ timedatectl set-ntp true
 
 # var
 DISKNAME="/dev/sda"
-DISK1="$DISKNAME"+1
-DISK2="$DISKNAME"+2
+DISK1="${DISKNAME}1"
+DISK2="${DISKNAME}2"
 
 # partition
 parted -s $DISKNAME mklabel gpt;
